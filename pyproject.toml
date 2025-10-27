@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdf-to-dwg"
+version = "0.1.0"
+description = "Convert vector PDFs into DXF/DWG CAD files using PyMuPDF and ezdxf"
+authors = [{name = "Auto Generated"}]
+requires-python = ">=3.9"
+dependencies = [
+    "pymupdf>=1.23",
+    "ezdxf>=1.1",
+]
+
+[project.scripts]
+pdf-to-dwg = "pdf_to_dwg.cli:main"
